@@ -1,0 +1,16 @@
+<!-- INCLUDEJS jquery.jcountdown.js -->
+<script type="text/javascript">
+// <![CDATA[
+$(document).ready(function(){
+   $("#online").countdown({
+      date: "{ONLINE_FOR}",
+      leadingZero: false,
+      offset: -1,
+      yearsAndMonths: true,
+      htmlTemplate: " <span class='cd-online'> </span> <strong>%y</strong> <span class=\"cd-online\">{L_ONLINEFOR_YRS}</span> <strong>%m</strong> <span class=\"cd-online\">{L_ONLINEFOR_MONTHS}</span>  <strong>%d</strong> <span class=\"cd-online\">{L_ONLINEFOR_DAYS}</span> <strong>%h</strong> <span class=\"cd-online\">{L_ONLINEFOR_HOURS}</span> <strong>%i</strong> <span class=\"cd-online\">{L_ONLINEFOR_MINUTES}</span>{L_ONLINEFOR_AND}<strong>%s</strong> <span class=\"cd-online\">{L_ONLINEFOR_SECONDS}.</span>",
+      direction: "up"
+   });     
+    });
+
+// ]]>
+</script>

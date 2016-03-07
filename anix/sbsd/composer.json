@@ -1,0 +1,35 @@
+{
+	"name": "anix/sbsd",
+	"type": "phpbb-extension",
+	"description": "Shows the board starting date.",
+	"homepage": "http://www.phpbbdev.ro",
+	"version": "1.0.0",
+	"time": "2016-02-24",
+	"keywords": ["phpbb", "extension", "Simple Board Starting Date"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Anix",
+			"homepage": "http://www.phpbbdev.ro",
+			"email": "neculaioffi@phpbbdev.ro",
+			"role": "Extension Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "Simple Board Starting Date",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.2,<3.2.*@dev"
+		},
+		"version-check": {
+			"host": "www.phpbbdev.ro",
+			"directory": "/versions",
+			"filename": "sbsd_version.json"
+		}
+	}
+}

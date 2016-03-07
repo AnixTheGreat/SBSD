@@ -1,0 +1,9 @@
+services:
+    anix.sbsd.listener:
+        class: anix\sbsd\event\listener
+        arguments:
+            - @template
+            - @config
+            - @user
+        tags:
+            - { name: event.listener }
